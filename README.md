@@ -24,6 +24,7 @@ ansible
 
 Example Playbook
 ----------------
+
 ---
 - name: general description of role's function
   hosts: all
