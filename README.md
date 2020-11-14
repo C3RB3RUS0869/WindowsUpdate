@@ -17,13 +17,13 @@ None
 Example Playbook
 ----------------
 
-Create YML file at /var/lib/awx/projects/<projectname>/role.yml
+Create YML file at /var/lib/awx/projects/projectname
 
 ---
-- name: <general description of role's function>
+- name: general description of role's function
   hosts: all
   roles:
-    - { role: <rolename> }
+    - { role: rolename }
 ...
 
 
