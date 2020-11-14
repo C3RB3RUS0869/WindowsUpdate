@@ -1,4 +1,0 @@
----
-- include_tasks: wuauserv_start.yml
-- include_tasks: wuauserv_search.yml
-- include_tasks: wuauserv_install.yml
