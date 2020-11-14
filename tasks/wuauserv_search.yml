@@ -1,0 +1,5 @@
+---
+- name: Searching for Windows Updates
+  win_updates:
+    state: searched
+  registered: update_count

@@ -1,0 +1,13 @@
+---
+- name: Installing Windows Updates
+  win_updates:
+    category_names:
+      - CriticalUpdates
+      - SecurityUpdates
+      - UpdateRollups
+    register: update_result
+
+- name: Reboot if needed
+  win_shell:
+  when: update_result.reboot_required
+  ignore_errors: yes

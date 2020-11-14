@@ -1,0 +1,6 @@
+---
+- name: Starting Windows Update Service
+  win_service:
+    name: wuauserv
+    start_mode: auto
+    state: started
