@@ -1,7 +1,7 @@
 ---
 - name: Installing Windows Updates
   win_updates:
-    category_names: "{{ category_names[0] }}"
+    category_names: "{{ category_names }}"
     register: update_result
 
 - name: Reboot if needed
