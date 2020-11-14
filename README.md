@@ -9,16 +9,6 @@ AWX/Ansible Tower
 ansible 2.9
 
 
-Create YML file at /var/lib/awx/projects/<projectname>/role.yml
-
-## EXAMPLE ##
----
-- name: <general description of role's function>
-  hosts: all
-  roles:
-    - { role: <rolename> }
-...
-
 Dependencies
 ------------
 
@@ -27,11 +17,15 @@ None
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Create YML file at /var/lib/awx/projects/<projectname>/role.yml
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+---
+- name: <general description of role's function>
+  hosts: all
+  roles:
+    - { role: <rolename> }
+...
+
 
 License
 -------
