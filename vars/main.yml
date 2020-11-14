@@ -1,2 +1,5 @@
 ---
-# vars file for windowsupdate
+category_names:
+  - SecurityUpdates
+  - CriticalUpdates
+  - UpdateRollups

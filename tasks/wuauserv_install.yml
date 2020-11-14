@@ -1,10 +1,7 @@
 ---
 - name: Installing Windows Updates
   win_updates:
-    category_names:
-      - CriticalUpdates
-      - SecurityUpdates
-      - UpdateRollups
+    category_names: "{{ category_names[0] }}"
     register: update_result
 
 - name: Reboot if needed
