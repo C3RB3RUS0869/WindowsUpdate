@@ -7,17 +7,23 @@ Requirements
 ------------
 AWX/Ansible Tower
 ansible 2.9
+Create role.yml file at /var/lib/awx/projects/<project>/<rolename>.yml
 
 
 Dependencies
 ------------
-
-None
+python-pip
+python36
+krb5-libs
+krb5-workstation
+krb5-devel
+openldap-clients
+openldap-devel
+epel-release
+ansible
 
 Example Playbook
 ----------------
-
-Create YML file at /var/lib/awx/projects/projectname
 ---
 - name: general description of role's function
   hosts: all
